@@ -12,5 +12,6 @@ class EmailAddressParser
   def parse
     new_list = @email_addresses.split(/[, ]/ )
     new_list.delete("")
+    new_list
   end
 end
