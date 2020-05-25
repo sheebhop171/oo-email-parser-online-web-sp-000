@@ -10,8 +10,8 @@ class EmailAddressParser
   end
 
   def parse
-    new_list = @email_addresses.uniq.split(/[, ]/ )
+    new_list = @email_addresses..split(/[, ]/ )
     new_list.delete("")
-    new_list
+    new_list.uniq
   end
 end
