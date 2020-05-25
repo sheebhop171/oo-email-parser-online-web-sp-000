@@ -10,7 +10,7 @@ class EmailAddressParser
   end
 
   def parse
-    @email_addresses.split(/[, ]/ )
-
+    new_list = @email_addresses.split(/[, ]/ )
+    new_list.delete("")
   end
 end
